@@ -13,29 +13,24 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="E-Jurnal"> 
-    <link rel="apple-touch-icon" href="https://drive.google.com/uc?export=view&id=1Q_CY8G5u_34QrWuFQ-r-TCG6Vkb8g-5G">
+    
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="icon" href="logo.png">
 
     <style>
-        /* Memastikan tidak ada ruang kosong tersisa */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            width: 100vw;
-            height: 100vh; 
-            overflow: hidden; 
-            background-color: #f8fafc; 
-        }
-        iframe { 
-            width: 100vw; 
-            height: 100vh; 
-            border: none; 
-            display: block;
-        }
+        body, html { margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; background-color: #f8fafc; }
+        iframe { width: 100vw; height: 100vh; border: none; display: block; }
     </style>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
 </head>
 <body>
-    
     <iframe src="https://script.google.com/macros/s/AKfycbxFtPuH1NG_W3Pe4SDD9IaZgum5QGA8Pgexrm8pONsVOUt_ICBIbVmRDOh9tbGg8anEfg/exec" allow="fullscreen" allowfullscreen></iframe>
-
 </body>
 </html>
